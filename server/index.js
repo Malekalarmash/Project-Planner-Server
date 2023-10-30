@@ -10,7 +10,7 @@ const taskRouter = require('./routes/tasks')
 
 
 const corsOptions = {
-    origin: 'https://malekalarmash.github.io/project-planner-cilent-',
+    origin: 'https://malekalarmash.github.io/project-planner-cilent-/',
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     preflightContinue: false,
     optionsSuccessStatus: 204,
