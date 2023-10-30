@@ -35,8 +35,13 @@ router.all('*', (req, res, next) => {
 })
 
 router.get('/', async (req, res) => {
-    const clients = await Client.findAll();
-    res.send(clients);
+    try{
+        const clients = await Client.findAll();
+        res.send(clients);
+    }
+    catch(err){
+        console.log(error)
+    }
 
 })
 router.post('/', async (req, res) => {
